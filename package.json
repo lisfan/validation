@@ -1,19 +1,24 @@
 {
   "name": "@~lisfan/validation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0-rc.0",
+  "description": "计时器",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lisfan/validation.git"
+    "url": "git+https://github.com/lisfan/timer.git"
   },
+  "keywords": [
+    "validition",
+    "typeof",
+    "data valid"
+  ],
   "author": "lisfan <goolisfan@gmail.com> (https://www.npmjs.com/~lisfan)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lisfan/validation/issues"
+    "url": "https://github.com/lisfan/timer/issues"
   },
-  "homepage": "https://github.com/lisfan/validation#readme"
+  "homepage": "https://github.com/lisfan/timer#readme"
 }
