@@ -4,7 +4,7 @@ const typeOf = function (value) {
 
 const isType = function (type) {
   return function (value) {
-    return typeof(value) === type
+    return typeOf(value) === type
   }
 }
 
