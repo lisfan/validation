@@ -1,6 +1,6 @@
 {
   "name": "@~lisfan/validation",
-  "version": "1.0.0-rc.5",
+  "version": "1.0.0-rc.6",
   "description": "计时器",
   "main": "src/index.js",
   "scripts": {
