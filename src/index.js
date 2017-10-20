@@ -39,7 +39,7 @@ export default {
     return value instanceof Object
   },
   isObjectLike(value) {
-    return this.isObject && typeof value === 'object'
+    return this.isObject && this.typeof(value) === 'object'
   },
   isPlainObject(value) {
     return this.isObject(value) && value.constructor === Object
