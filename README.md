@@ -2,10 +2,11 @@
 
 [API documentation](https://lisfan.github.io/storage/)
 
-## 特性
+## Feature 特性
+
 提供常规的数据类型验证工具函数，方法名和功能参考了[lodash](https://lodash.com/docs/4.17.4)
 
-## 安装
+## Install 安装
 
 ```bash
 npm install -S @~lisfan/validation
