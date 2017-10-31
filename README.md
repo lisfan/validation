@@ -14,7 +14,7 @@ npm install -S @~lisfan/validation
 
 ## Usage 起步
 
-``` js
+```js
 import validation from '@~lisfan/validation'
 
 // 返回所求值的数据类型
