@@ -1,6 +1,6 @@
 {
   "name": "@~lisfan/validation",
-  "version": "1.0.0-rc.11",
+  "version": "1.0.0-rc.12",
   "description": "简易数据类型检测工具函数",
   "main": "src/index.js",
   "scripts": {
