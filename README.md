@@ -1,4 +1,6 @@
-# Validation 数据类型验证
+# Validation
+
+## 数据类型验证
 
 [API documentation](https://lisfan.github.io/storage/)
 
