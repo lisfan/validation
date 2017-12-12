@@ -3,7 +3,7 @@
  *
  * @ignore
  * @param {*} value - 任意值
- * @return {string}
+ * @returns {string}
  */
 const typeOf = function (value) {
   return Object.prototype.toString.call(value).slice(8, -1).toLowerCase()
@@ -14,7 +14,7 @@ const typeOf = function (value) {
  *
  * @ignore
  * @param {string} type - 指定类型值
- * @return {string}
+ * @returns {string}
  */
 const isType = function (type) {
   return function (value) {
@@ -32,7 +32,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {string}
+   * @returns {string}
    */
   'typeof': typeOf,
 
@@ -42,7 +42,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isUndefined: isType('undefined'),
   /**
@@ -51,7 +51,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isNull: isType('null'),
   /**
@@ -60,7 +60,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isNil(value) {
     return this.isUndefined(value) || this.isNull(value)
@@ -71,7 +71,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isBoolean: isType('boolean'),
   /**
@@ -80,7 +80,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isNumber: isType('number'),
   /**
@@ -89,7 +89,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isNaN(value) {
     return this.isNumber(value) && Number.isNaN(value)
@@ -100,7 +100,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isInteger: Number.isInteger,
   /**
@@ -109,7 +109,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isSafeInteger: Number.isSafeInteger,
   /**
@@ -118,7 +118,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isFinite: Number.isFinite,
   /**
@@ -127,7 +127,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isLength(value) {
     return this.isInteger(value) && this.isFinite(value) && value >= 0 && value <= Number.MAX_SAFE_INTEGER
@@ -138,7 +138,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isString: isType('string'),
   /**
@@ -147,7 +147,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isArray: isType('array'),
   /**
@@ -157,7 +157,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isArrayLikeObject(value) {
     return this.isArray(value) || this.isObject(value) && this.isLength(value.length)
@@ -168,7 +168,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isArrayLike(value) {
     return this.isArrayLikeObject(value) || this.isString(value)
@@ -180,7 +180,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isObject(value) {
     return value instanceof Object
@@ -192,7 +192,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isObjectLike(value) {
     return this.isObject(value) && this.typeof(value) === 'object'
@@ -203,7 +203,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isPlainObject(value) {
     return this.isObject(value) && value.constructor === Object
@@ -214,7 +214,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isEmpty(value) {
     if (this.isString(value) && value.length > 0) {
@@ -233,7 +233,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isArguments: isType('arguments'),
   /**
@@ -242,7 +242,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isFunction: isType('function'),
   /**
@@ -251,7 +251,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isElement: isType('element'),
 
@@ -261,7 +261,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isSymbol: isType('symbol'),
   /**
@@ -270,7 +270,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isError: isType('error'),
   /**
@@ -279,7 +279,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isRegExp: isType('regexp'),
   /**
@@ -288,7 +288,7 @@ export default {
    * @memberOf Validation
    * @function
    * @param {*} value - 任意值
-   * @return {boolean}
+   * @returns {boolean}
    */
   isDate: isType('date'),
 }
