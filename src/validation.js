@@ -44,6 +44,8 @@ export default {
   /**
    * 返回数据类型
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -56,6 +58,8 @@ export default {
   /**
    * 检测值是否为undefined
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -67,6 +71,8 @@ export default {
   /**
    * 检测值是否为null
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -77,6 +83,8 @@ export default {
   isNull: isType('null'),
   /**
    * 检测值是否为undefined或null
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -91,6 +99,8 @@ export default {
   /**
    * 检测值是否为布尔值
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -102,6 +112,8 @@ export default {
   /**
    * 检测值是否为数字
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -112,6 +124,8 @@ export default {
   isNumber: isType('number'),
   /**
    * 检测值是否为NaN
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -126,6 +140,8 @@ export default {
   /**
    * 检测值是否为整型数字
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -136,6 +152,8 @@ export default {
   isInteger: Number.isInteger,
   /**
    * 检测值是否为安全整型数字
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -148,6 +166,8 @@ export default {
   /**
    * 检测值是否为有限值
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -158,6 +178,8 @@ export default {
   isFinite: Number.isFinite,
   /**
    * 检测值是否为大于等于0的安全整数
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -172,6 +194,8 @@ export default {
   /**
    * 检测值是否为字符串
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -182,6 +206,8 @@ export default {
   isString: isType('string'),
   /**
    * 检测值是否为数组
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -195,6 +221,8 @@ export default {
    * 检测值是否为类数组对象
    * 类对象应该不是 null ，且 typeof 的结果是 "object"。
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -207,6 +235,8 @@ export default {
   },
   /**
    * 检测值是否为类数组
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -222,6 +252,8 @@ export default {
    * 检测值是否为对象
    * 会检查 value 是否是 Object 的 language type。 (例如： arrays, functions, objects, regexes, new Number(0), 以及 new String(''))
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -236,6 +268,8 @@ export default {
    * 检测值是否为类对象
    * 类对象应该不是 null 以及 typeof 的结果是 "object"。
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -249,6 +283,8 @@ export default {
   /**
    * 检测值是否为纯对象
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -261,6 +297,8 @@ export default {
   },
   /**
    * 检测值是否为空：空字符串、空数组、空对象，其余情况均为true
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -277,6 +315,8 @@ export default {
   /**
    * 检测值是否为函数的arguments对象
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -288,6 +328,8 @@ export default {
   /**
    * 检测值是否为函数
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -298,6 +340,8 @@ export default {
   isFunction: isType('function'),
   /**
    * 检测值是否为DOM元素
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -311,6 +355,8 @@ export default {
   /**
    * 检测值是否为Symbol
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -321,6 +367,8 @@ export default {
   isSymbol: isType('symbol'),
   /**
    * 检测值是否为Error对象
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
@@ -333,6 +381,8 @@ export default {
   /**
    * 检测值是否为正则表达式
    *
+   * @since 1.0.0
+   *
    * @function
    * @memberOf Validation
    *
@@ -343,6 +393,8 @@ export default {
   isRegExp: isType('regexp'),
   /**
    * 检测值是否为日期对象
+   *
+   * @since 1.0.0
    *
    * @function
    * @memberOf Validation
