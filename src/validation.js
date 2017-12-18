@@ -231,7 +231,7 @@ export default {
    * @returns {boolean}
    */
   isArrayLikeObject(value) {
-    return this.isArray(value) || this.isObject(value) && this.isLength(value.length)
+    return (this.isArray(value) || this.isObject(value)) && this.isLength(value.length)
   },
   /**
    * 检测值是否为类数组
