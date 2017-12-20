@@ -1,8 +1,5 @@
 /**
  * @file 简易数据类型检测工具函数
- * @author lisfan <goolisfan@gmail.com>
- * @version 1.0.2
- * @licence MIT
  */
 
 /**
